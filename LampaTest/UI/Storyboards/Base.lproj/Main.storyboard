@@ -208,26 +208,30 @@
                                     <outlet property="delegate" destination="Yms-m5-RFt" id="PGM-qC-s2K"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="QPP-eK-bt7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Yms-m5-RFt" id="c8x-L0-Os4"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9fX-ii-qvg" firstAttribute="top" secondItem="6Wb-dn-DMi" secondAttribute="top" id="516-Ea-jiY"/>
+                            <constraint firstAttribute="trailing" secondItem="QPP-eK-bt7" secondAttribute="trailing" id="KDN-rj-CNV"/>
+                            <constraint firstItem="QPP-eK-bt7" firstAttribute="leading" secondItem="6Wb-dn-DMi" secondAttribute="leading" id="Ps8-4O-81G"/>
                             <constraint firstAttribute="trailing" secondItem="9fX-ii-qvg" secondAttribute="trailing" id="R3X-mi-34B"/>
+                            <constraint firstItem="QPP-eK-bt7" firstAttribute="top" secondItem="6Wb-dn-DMi" secondAttribute="topMargin" id="fJL-W6-AdE"/>
                             <constraint firstItem="9fX-ii-qvg" firstAttribute="leading" secondItem="6Wb-dn-DMi" secondAttribute="leading" id="mRo-5E-sRq"/>
                             <constraint firstAttribute="bottom" secondItem="9fX-ii-qvg" secondAttribute="bottom" id="qi5-kv-OdB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="NEWS" id="KcF-5E-81c">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="ZDZ-4D-04C">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hhi-JQ-fXO">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="NEWS" id="KcF-5E-81c"/>
                     <connections>
                         <outlet property="newsTable" destination="9fX-ii-qvg" id="xGG-Qt-MdA"/>
+                        <outlet property="search" destination="QPP-eK-bt7" id="jxW-m1-DbR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4G-vB-B1k" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -27,6 +27,7 @@
 		5E4D5644210E3BAA0038D9CF /* NewsTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D5643210E3BAA0038D9CF /* NewsTableViewDelegate.swift */; };
 		5E4D5647210E450A0038D9CF /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D5646210E450A0038D9CF /* NewsCell.swift */; };
 		5E4D564B210E572F0038D9CF /* DownloadImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D564A210E572F0038D9CF /* DownloadImageURL.swift */; };
+		5E4D564D210E833C0038D9CF /* NewsSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D564C210E833B0038D9CF /* NewsSearchBarDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		5E4D5648210E4E120038D9CF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		5E4D5649210E4E120038D9CF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5E4D564A210E572F0038D9CF /* DownloadImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageURL.swift; sourceTree = "<group>"; };
+		5E4D564C210E833B0038D9CF /* NewsSearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsSearchBarDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			children = (
 				5E4D5635210DF7070038D9CF /* NewsViewController.swift */,
 				5E4D5643210E3BAA0038D9CF /* NewsTableViewDelegate.swift */,
+				5E4D564C210E833B0038D9CF /* NewsSearchBarDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				5E4D5632210DE6390038D9CF /* MovieEntity.swift in Sources */,
 				5E4D562E210DE4860038D9CF /* ApiRequest.swift in Sources */,
 				5E4D563B210DF7070038D9CF /* NewsViewController.swift in Sources */,
+				5E4D564D210E833C0038D9CF /* NewsSearchBarDelegate.swift in Sources */,
 				5E4D5647210E450A0038D9CF /* NewsCell.swift in Sources */,
 				5E4D5639210DF7070038D9CF /* NewsPresenter.swift in Sources */,
 				5E4D563A210DF7070038D9CF /* NewsRouter.swift in Sources */,

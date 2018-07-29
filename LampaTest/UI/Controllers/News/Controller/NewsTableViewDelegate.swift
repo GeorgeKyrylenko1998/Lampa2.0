@@ -31,4 +31,11 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource{
             self.presenter?.getNewNews(page: currentPage + 1)
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let alert = UIAlertController(title: "ALERT", message: news[indexPath.row].title, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
 }
