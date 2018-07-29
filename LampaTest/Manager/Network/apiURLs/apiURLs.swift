@@ -14,7 +14,7 @@ class apiUrl {
     static func getPopularMovieURL(page: Int) -> URL{
         var urlString = baseURL + "movie/popular"
         
-        let props = ["language":Locale.current.languageCode, "page": page] as? [String:Any]
+        let props = ["language":Locale.current.languageCode ?? "en", "page": page] as? [String:Any]
         
         urlString += PropsManager.getProps(props: props)
         return URL(string: urlString)!

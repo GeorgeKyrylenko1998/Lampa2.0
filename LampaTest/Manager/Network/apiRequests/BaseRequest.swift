@@ -24,6 +24,8 @@ class BaseRequest{
                 }
             }
             
+            print(url.absoluteString)
+            
             URLSession.shared.dataTask(with: requset as URLRequest, completionHandler: { (data, response, error) in
                 if error != nil{
                     observer.onError(error!)
