@@ -13,6 +13,12 @@
 		5E4D5613210DC7650038D9CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D5611210DC7650038D9CF /* Main.storyboard */; };
 		5E4D5615210DC7670038D9CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D5614210DC7670038D9CF /* Assets.xcassets */; };
 		5E4D5618210DC7670038D9CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4D5616210DC7670038D9CF /* LaunchScreen.storyboard */; };
+		5E4D5626210DD6E90038D9CF /* apiURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D5625210DD6E90038D9CF /* apiURLs.swift */; };
+		5E4D5628210DD82E0038D9CF /* Props.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D5627210DD82E0038D9CF /* Props.swift */; };
+		5E4D562B210DDE660038D9CF /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D562A210DDE660038D9CF /* BaseRequest.swift */; };
+		5E4D562E210DE4860038D9CF /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D562D210DE4860038D9CF /* ApiRequest.swift */; };
+		5E4D5630210DE56D0038D9CF /* MovieDataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D562F210DE56D0038D9CF /* MovieDataEntity.swift */; };
+		5E4D5632210DE6390038D9CF /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4D5631210DE6390038D9CF /* MovieEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		5E4D5614210DC7670038D9CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E4D5617210DC7670038D9CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E4D5619210DC7670038D9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4D5625210DD6E90038D9CF /* apiURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiURLs.swift; sourceTree = "<group>"; };
+		5E4D5627210DD82E0038D9CF /* Props.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Props.swift; sourceTree = "<group>"; };
+		5E4D562A210DDE660038D9CF /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		5E4D562D210DE4860038D9CF /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		5E4D562F210DE56D0038D9CF /* MovieDataEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataEntity.swift; sourceTree = "<group>"; };
+		5E4D5631210DE6390038D9CF /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,8 @@
 		5E4D560C210DC7650038D9CF /* LampaTest */ = {
 			isa = PBXGroup;
 			children = (
+				5E4D561F210DC9ED0038D9CF /* Manager */,
+				5E4D5620210DC9F50038D9CF /* UI */,
 				5E4D560D210DC7650038D9CF /* AppDelegate.swift */,
 				5E4D560F210DC7650038D9CF /* ViewController.swift */,
 				5E4D5611210DC7650038D9CF /* Main.storyboard */,
@@ -86,6 +100,74 @@
 				5E4D5619210DC7670038D9CF /* Info.plist */,
 			);
 			path = LampaTest;
+			sourceTree = "<group>";
+		};
+		5E4D561F210DC9ED0038D9CF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5E4D5623210DCA580038D9CF /* Network */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5E4D5620210DC9F50038D9CF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5E4D5622210DCA050038D9CF /* Storyboards */,
+				5E4D5621210DC9FC0038D9CF /* Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5E4D5621210DC9FC0038D9CF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E4D5622210DCA050038D9CF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5E4D5623210DCA580038D9CF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5E4D562C210DDEA60038D9CF /* Entities */,
+				5E4D5629210DDE4C0038D9CF /* apiRequests */,
+				5E4D5624210DD6D40038D9CF /* apiURLs */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5E4D5624210DD6D40038D9CF /* apiURLs */ = {
+			isa = PBXGroup;
+			children = (
+				5E4D5625210DD6E90038D9CF /* apiURLs.swift */,
+				5E4D5627210DD82E0038D9CF /* Props.swift */,
+			);
+			path = apiURLs;
+			sourceTree = "<group>";
+		};
+		5E4D5629210DDE4C0038D9CF /* apiRequests */ = {
+			isa = PBXGroup;
+			children = (
+				5E4D562A210DDE660038D9CF /* BaseRequest.swift */,
+				5E4D562D210DE4860038D9CF /* ApiRequest.swift */,
+			);
+			path = apiRequests;
+			sourceTree = "<group>";
+		};
+		5E4D562C210DDEA60038D9CF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5E4D562F210DE56D0038D9CF /* MovieDataEntity.swift */,
+				5E4D5631210DE6390038D9CF /* MovieEntity.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +266,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LampaTest/Pods-LampaTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -216,8 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4D562B210DDE660038D9CF /* BaseRequest.swift in Sources */,
+				5E4D5632210DE6390038D9CF /* MovieEntity.swift in Sources */,
 				5E4D5610210DC7650038D9CF /* ViewController.swift in Sources */,
+				5E4D562E210DE4860038D9CF /* ApiRequest.swift in Sources */,
 				5E4D560E210DC7650038D9CF /* AppDelegate.swift in Sources */,
+				5E4D5630210DE56D0038D9CF /* MovieDataEntity.swift in Sources */,
+				5E4D5628210DD82E0038D9CF /* Props.swift in Sources */,
+				5E4D5626210DD6E90038D9CF /* apiURLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,10 +455,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KEUKVBV6MH;
 				INFOPLIST_FILE = LampaTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = george.LampaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -381,10 +474,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KEUKVBV6MH;
 				INFOPLIST_FILE = LampaTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = george.LampaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
