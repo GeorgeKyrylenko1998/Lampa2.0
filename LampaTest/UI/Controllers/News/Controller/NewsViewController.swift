@@ -36,7 +36,18 @@ class NewsViewController: UIViewController, NewsViewProtocol {
         }
     }
     
+    @IBAction func swipeUP(_ sender: Any) {
+        UIView.animate(withDuration: 0.3) {
+            self.search.layer.transform = CATransform3DTranslate(CATransform3DIdentity, 0, self.search.frame.size.height * -1, 0)
+        }
+    }
     
+    
+    @IBAction func swipeDown(_ sender: Any) {
+        UIView.animate(withDuration: 0.3) {
+            self.search.layer.transform = CATransform3DIdentity
+        }
+    }
     
     func filterNews(title: String){
         if title != ""{

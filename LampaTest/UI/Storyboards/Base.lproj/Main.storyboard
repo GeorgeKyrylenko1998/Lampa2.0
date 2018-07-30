@@ -115,6 +115,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9fX-ii-qvg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsCell" rowHeight="191" id="66s-wH-NRw" customClass="NewsCell" customModule="LampaTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="191"/>
@@ -145,7 +146,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.64453125" green="0.097415453767123295" blue="0.18648330479452055" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.89411764705882346" green="0.89014340753424659" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="QIL-oZ-lH1" firstAttribute="centerY" secondItem="gHB-Cr-Rh8" secondAttribute="centerY" id="H46-k9-NGy"/>
                                                         <constraint firstAttribute="height" constant="40" id="VTx-wj-0lX"/>
@@ -206,6 +207,8 @@
                                 <connections>
                                     <outlet property="dataSource" destination="Yms-m5-RFt" id="nDf-eF-s9W"/>
                                     <outlet property="delegate" destination="Yms-m5-RFt" id="PGM-qC-s2K"/>
+                                    <outletCollection property="gestureRecognizers" destination="K7v-LP-kJi" appends="YES" id="ZW2-5N-6TX"/>
+                                    <outletCollection property="gestureRecognizers" destination="fl6-iA-APE" appends="YES" id="kvV-An-Ka8"/>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="QPP-eK-bt7">
@@ -218,6 +221,7 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="9fX-ii-qvg" firstAttribute="top" secondItem="6Wb-dn-DMi" secondAttribute="top" id="516-Ea-jiY"/>
                             <constraint firstAttribute="trailing" secondItem="QPP-eK-bt7" secondAttribute="trailing" id="KDN-rj-CNV"/>
@@ -235,6 +239,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4G-vB-B1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="K7v-LP-kJi">
+                    <connections>
+                        <action selector="swipeUP:" destination="Yms-m5-RFt" id="X7l-uK-a5R"/>
+                        <outlet property="delegate" destination="Yms-m5-RFt" id="I3t-lE-Xjj"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="fl6-iA-APE">
+                    <connections>
+                        <action selector="swipeDown:" destination="Yms-m5-RFt" id="sp6-pr-KYQ"/>
+                        <outlet property="delegate" destination="Yms-m5-RFt" id="7zf-Iw-Eif"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3740" y="-188.00599700149925"/>
         </scene>
